@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header,
+.footer {
+  padding: 1rem;
+}
+.wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+.calculator {
+  background: lavender;
+  margin: auto;
+  max-width: 20rem;
+  min-width: 10rem;
+  max-height: 30rem;
+  min-height: 20rem;
+  padding: 0.25rem;
+  border: 0.25rem dotted black;
+}
+
+.content {
+  padding-bottom: 10rem; /* Height of the footer element */
+}
+
+.footer {
+  background: lavender;
+  bottom: 0;
+  height: 10rem;
+  position: absolute;
+  width: 100%;
+}
