@@ -4,6 +4,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
+  font-family: "Avenir Next Condensed", sans-serif;
 }
 
 .header,
@@ -15,25 +16,48 @@ body {
 	position:relative;
 }
 
-.calculator {
-  background: lavender;
-  margin: auto;
-  max-width: 20rem;
-  min-width: 10rem;
-  max-height: 30rem;
-  min-height: 20rem;
-  padding: 0.25rem;
-  border: 0.25rem dotted black;
+.content {
+  padding-bottom: 3rem; /* Height of the footer element */
 }
 
-.content {
-  padding-bottom: 10rem; /* Height of the footer element */
+.container {
+  min-width: 10rem;
+  max-width: 20rem;
+  background: black;
+  border-radius: 1em;
+  margin: auto;
+  padding: 1em;
+  box-shadow: 8px 8px 4px #888888;
+}
+
+.display {
+  background: paleturquoise;
+  text-align: right;
+  padding: 1em;
+}
+
+.button {
+  background: paleturquoise;
+  margin: 0.25rem;
+  width: 4rem;
+  border-radius: 25%;
+  border: none;
+  height: 2em;
+  color: black;
+}
+
+.button:active {
+  background: darkturquoise;
+}
+
+.equal-sign {
+  width: 8.75rem;
 }
 
 .footer {
-  background: lavender;
+  background: paleturquoise;
   bottom: 0;
-  height: 10rem;
+  height: 3rem;
   position: absolute;
   width: 100%;
 }

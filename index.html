@@ -13,10 +13,6 @@
         <!-- CSS Reset -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 
-        <!-- Milligram CSS minified -->
-        <link rel="stylesheet" href="css/milligram/dist/milligram.min.css">
-
-
         <!-- custom styles -->
         <link rel="stylesheet" href="css/customstyles.css">
 
@@ -36,15 +32,48 @@
             <h1>JavaScript Calculator</h1>
         </header>
 
-        <div class="content">
-            <div class="calculator">The calculator will live in this div. </div>
+    <div class="content">
+        <div class='container'>
+            <div>
+                <p class="display">0</p>
+            </div>
+            <div class="row">
+                  <button class="button" id='ac'>AC</button>
+                  <button class="button" id='ce'>CE</button>
+                  <button class="button" id='percent'>%</button>
+                  <button class='operator button' id='divide'>/</button>
+            </div>
+            <div class='row'>
+                    <button class='num button' id='seven'>7</button>
+                    <button class='num button' id='eight'>8</button>
+                    <button class='num button' id='nine'>9</button>
+                    <button class='operator button' id='multiply'>X</button>
+            </div>
+            <div class='row'>
+                    <button class='num button' id='four'>4</button>
+                    <button class='num button' id='five'>5</button>
+                    <button class='num button' id='six'>6</button>
+                    <button class='operator button' id='minus'>-</button>
+            </div>
+            <div class='row'>
+                    <button class='num button'  id='one'>1</button>
+                    <button class='num button'  id='two'>2</button>
+                    <button class='num button' id='three'>3</button>
+                    <button class='operator button' id='add'>+</button>
+            </div>
+            <div class='row'>
+                    <button class='num button' id='zero'>0</button>
+                    <button class='num button' id='decimal'>.</button>
+                    <button class="operator equal-sign button" id='equals'>=</button>
+            </div>
         </div>
+    </div>
 
-        <br>
-        <footer class="footer">
+    <br>
+    <footer class="footer">
             <p>Code by <a href="http://treecasiano.com">Tree Casiano</a>.</p>
 
-        </footer>
+    </footer>
     </div>
 
 
