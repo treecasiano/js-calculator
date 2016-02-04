@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Avenir Next Condensed", sans-serif;
+  font-size: 16px;
 }
 
 .header,
@@ -21,13 +22,17 @@ body {
 }
 
 .container {
-  min-width: 10rem;
-  max-width: 20rem;
   background: black;
   border-radius: 1em;
-  margin: auto;
-  padding: 1em;
   box-shadow: 8px 8px 4px #888888;
+  height: 20rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  min-width: 10rem;
+  padding: 1em;
+  position: absolute;
+  width: 20rem;
 }
 
 .display {
