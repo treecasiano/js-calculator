@@ -6,7 +6,11 @@ var answer = "";
 var calc = "";
 
 
-// assign event handler to buttons with switch statements for the options
+// assign event handler to buttons
+  $(".button").click(function() {
+    console.log("Is this thing on?");
+  });
+
 
 // if button value is "=" use eval() method to evaluate the expression
 
