@@ -18,20 +18,24 @@ body {
 }
 
 .content {
-  padding-bottom: 3rem; /* Height of the footer element */
+  /* height of the footer element */
+  padding-bottom: 5rem;
 }
 
-.container {
+.intro-text {
+  margin: auto;
+  max-width: 70%;
+}
+
+.calculator-container {
   background: black;
   border-radius: 1em;
   box-shadow: 8px 8px 4px #888888;
-  height: 20rem;
   left: 0;
   right: 0;
   margin: auto;
-  min-width: 10rem;
   padding: 1em;
-  position: absolute;
+  position: static;
   width: 20rem;
 }
 
@@ -39,6 +43,9 @@ body {
   background: paleturquoise;
   text-align: right;
   padding: 1em;
+  height: 2em;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .button {
@@ -56,13 +63,14 @@ body {
 }
 
 .equal-sign {
-  width: 8.75rem;
+  width: 90%;
 }
 
 .footer {
   background: paleturquoise;
   bottom: 0;
   height: 3rem;
+  /*absolute position will keep the footer at the bottom of the container it is in*/
   position: absolute;
   width: 100%;
 }
