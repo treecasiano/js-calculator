@@ -1,23 +1,40 @@
 // calculator.js
 
-( function( $ ) {
-
-var answer = "";
-var calc = "";
-
+(function ($) {
+  var answer;
+  var expression = "";
+  var $display = $ ('#display');
 
 // assign event handler to buttons
-  $(".button").click(function() {
-    console.log("Is this thing on?");
+  $ (".button").click (function () {
+    var entry = $ (this).attr ("value");
+
+    if (entry === "AC") {
+      expression = "";
+      $display.text(expression);
+      return;
+    }
+
+    if (entry === "CE") {
+      expression = expression.slice (0, -1);
+      $display.text(expression);
+      return;
+    }
+
+    if (entry == "=") {
+      answer = eval (expression);
+      $display.text (answer);
+      expression = answer;
+      return;
+    }
+
+    if (entry !== "=") {
+      expression += entry;
+      $display.text (expression);
+    }
+
   });
-
-
-// if button value is "=" use eval() method to evaluate the expression
-
-// after eval(), clear text field and replace with answer
-
-
-})( jQuery );
+}) (jQuery);
 
 
 
