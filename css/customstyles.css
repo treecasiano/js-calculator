@@ -75,3 +75,9 @@ body {
   position: absolute;
   width: 100%;
 }
+
+.footer-links {
+  color: darkturquoise;
+  font-weight: bold;
+  text-decoration: none;
+}
