@@ -1,71 +1,83 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>JavaScript Calculator</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>JavaScript Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Google Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 
-        <!-- CSS Reset -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <!-- CSS Reset -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 
-        <!-- custom styles -->
-        <link rel="stylesheet" href="css/customstyles.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/customstyles.css">
 
-        <!--include HTML5 Shiv after link tags-->
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+    <!--include HTML5 Shiv after link tags-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <![endif]-->
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <h1>JavaScript Calculator</h1>
-        </header>
-
+<div class="wrapper">
+    <header class="header">
+        <h1>JavaScript Calculator</h1>
+    </header>
+    <div class="intro-text">
+        <p>This JavaScript calculator will allow you to use the main arithmetic operators
+            in the JavaScript language.</p>
+        <p> Note: the percent sign refers to the modules operator and is not a way to get
+            the percentage
+            of a number.</p>
+    </div>
     <div class="content">
-        <div class='container'>
+        <div class='calculator-container'>
             <div>
-                <p class="display">0</p>
+                <p id="display" class="display">0</p>
             </div>
             <div class="face">
                 <div class="row">
-                      <button class="button">AC</button>
-                      <button class="button">CE</button>
-                      <button class="button">%</button>
-                      <button class="button">/</button>
+                    <button class="button" value="AC">AC</button>
+                    <button class="button" value="CE">CE</button>
+                    <button class="button" value="%">%</button>
+                    <button class="button" value="/">/</button>
                 </div>
                 <div class='row'>
-                        <button class='button' value="7">7</button>
-                        <button class='button' value='8'>8</button>
-                        <button class='button' value='9'>9</button>
-                        <button class='button'>X</button>
+                    <button class='button' value="7">7</button>
+                    <button class='button' value='8'>8</button>
+                    <button class='button' value='9'>9</button>
+                    <button class='button' value="*">X</button>
                 </div>
                 <div class='row'>
-                        <button class='button' value="4">4</button>
-                        <button class='button' value="5">5</button>
-                        <button class='button' value="6">6</button>
-                        <button class='button'>-</button>
+                    <button class='button' value="4">4</button>
+                    <button class='button' value="5">5</button>
+                    <button class='button' value="6">6</button>
+                    <button class='button' value="-">-</button>
                 </div>
                 <div class='row'>
-                        <button class='button' value="1">1</button>
-                        <button class='button' value="2">2</button>
-                        <button class='button' value="3">3</button>
-                        <button class='button'>+</button>
+                    <button class='button' value="1">1</button>
+                    <button class='button' value="2">2</button>
+                    <button class='button' value="3">3</button>
+                    <button class='button' value="+">+</button>
                 </div>
                 <div class='row'>
-                        <button class='button' value="0">0</button>
-                        <button class='button'>.</button>
-                        <button class="button equal-sign">=</button>
+                    <button class='button' value="0">0</button>
+                    <button class='button' value=".">.</button>
+                    <button class="button" value="(">(</button>
+                    <button class="button" value=")">)</button>
+                </div>
+                <div class="row">
+                    <button class="button equal-sign" value="=">=</button>
                 </div>
             </div>
         </div>
@@ -73,13 +85,12 @@
 
     <br>
     <footer class="footer">
-            <p>Code by <a href="http://treecasiano.com">Tree Casiano</a>.</p>
-
+        <p>Code by <a href="http://treecasiano.com">Tree Casiano</a>.</p>
     </footer>
-    </div>
+</div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/calculator.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/calculator.js"></script>
 </body>
 </html>
