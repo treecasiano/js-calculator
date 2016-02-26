@@ -1,20 +1,21 @@
 html,
 body {
-  height: 100%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
   font-family: "Avenir Next Condensed", sans-serif;
   font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .header,
 .footer {
   padding: 1rem;
 }
+
 .wrapper {
-	min-height:100%;
-	position:relative;
+  min-height: 100%;
+  position: relative;
 }
 
 .content {
@@ -32,30 +33,30 @@ body {
   border-radius: 1em;
   box-shadow: 8px 8px 4px #888888;
   left: 0;
-  right: 0;
   margin: auto;
   padding: 1em;
   position: static;
+  right: 0;
   width: 20rem;
 }
 
 .display {
   background: paleturquoise;
-  text-align: right;
-  padding: 1em;
-  height: 2em;
   font-size: 1.25em;
   font-weight: bold;
+  height: 2em;
+  padding: 1em;
+  text-align: right;
 }
 
 .button {
   background: paleturquoise;
+  border: none;
+  border-radius: 25%;
+  color: black;
+  height: 2em;
   margin: 0.25rem;
   width: 4rem;
-  border-radius: 25%;
-  border: none;
-  height: 2em;
-  color: black;
 }
 
 .button:active {
