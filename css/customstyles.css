@@ -81,3 +81,15 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
+
+/* Mobile Portrait */
+ @media only screen and (max-device-width: 480px) {
+
+  .calculator-container {
+    width: 16em;
+  }
+
+  .button {
+    width: 2.7em;
+  }
+}
