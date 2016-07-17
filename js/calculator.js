@@ -12,28 +12,33 @@
     if (entry === "AC") {
       expression = "";
       $display.text(expression);
-      return;
     }
-
-    if (entry === "CE") {
+    else if (entry === "CE") {
       expression = expression.slice (0, -1);
       $display.text(expression);
-      return;
     }
-
-    if (entry == "=") {
-      answer = eval (expression);
-      $display.text (answer);
-      expression = answer;
-      return;
+    else if (entry == "=") {
+      evaluateAnswer();
     }
-
-    if (entry !== "=") {
+    else {
       expression += entry;
       $display.text (expression);
     }
-
   });
+
+  $(document).on('keydown', function (e) {
+    if (e.which == 13) {
+        evaluateAnswer();
+     }
+});
+
+  function evaluateAnswer() {
+      answer = eval (expression);
+      $display.text (answer);
+      expression = answer;
+  }
+
+
 }) (jQuery);
 
 
